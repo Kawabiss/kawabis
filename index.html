@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visit Our Instagram</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 600px;
+            padding: 20px;
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .header-image {
+            width: 100%;
+            max-height: 250px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        .message {
+            font-size: 24px;
+            margin: 30px 0;
+            color: #333;
+            font-weight: 500;
+        }
+
+        .instagram-button {
+            background: linear-gradient(45deg, #405DE6, #5851DB, #833AB4, #C13584, #E1306C, #FD1D1D);
+            color: white;
+            border: none;
+            padding: 12px 28px;
+            font-size: 18px;
+            font-weight: bold;
+            border-radius: 8px;
+            cursor: pointer;
+            margin-top: 20px;
+            transition: all 0.3s ease;
+        }
+
+        .instagram-button:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                width: 90%;
+                padding: 15px;
+            }
+            .message {
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Replace the image src with your actual image URL -->
+        <img src="/api/placeholder/600/250" alt="Welcome Image" class="header-image">
+        
+        <div class="message">
+            What's here? I don't know either! 🤷‍♂️
+        </div>
+        
+        <button class="instagram-button" id="instagramButton">
+            Follow us on Instagram
+        </button>
+    </div>
+
+    <script>
+        // Replace 'YOUR_INSTAGRAM_URL' with your actual Instagram URL
+        const instagramUrl = 'https://www.instagram.com/YOUR_INSTAGRAM_HANDLE';
+        
+        document.getElementById('instagramButton').addEventListener('click', function() {
+            window.location.href = instagramUrl;
+        });
+    </script>
+</body>
+</html>
